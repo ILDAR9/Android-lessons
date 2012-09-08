@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:id="@+id/leText"
+      	android:text="I'm editable text field!"
+        />
+    
+    <Button
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/lButtom"
+		android:text="Web View!"
+        />
+    <Button
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/lButtom"
+		android:text="Frame Layout"
+        />
+    <Button
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/lButtom"
+		android:text="Grid layout"
+        />
+    
+    <TextView
+        android:id="@+id/ltView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="20dip" 
+        android:layout_margin="20dip"/>
+    
+    <Spinner
+        android:id="@+id/lspinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/listView"        
+        />
+    
+</LinearLayout>

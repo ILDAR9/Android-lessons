@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#334433"
+    >
+    
+    <Button
+        android:layout_margin="30dip"
+        android:id="@+id/timeButton"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Show TIME!!!:))))"       
+        />
+    <Button
+        android:id="@+id/webButton"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Web? What?"       
+		android:layout_margin="30dip"
+        />
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Map - funny:)"    
+		android:layout_margin="30dip"   
+        />
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Let me call for somebody:)"  
+		android:layout_margin="30dip"     
+        />
+
+    </LinearLayout>

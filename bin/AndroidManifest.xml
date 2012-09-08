@@ -1,0 +1,126 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sdl.example.allyoushouldknow"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_UPDATES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+	
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps"/>
+        <activity
+            android:name=".AllYouShouldKnow"
+            android:label="@string/title_activity_all_you_should_know" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".LifeCycleTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        
+        <activity 
+            android:name=".SingleTouchTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".MultiTouchTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".LayoutsTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".WebViewTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".KeyTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".AccelerometerTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".AssetsTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".ExternalStorageTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".SoundPoolTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".MediaPlayerTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".FullScreenTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".LocationTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".GoogleMapTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".IntentTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".ShowTime"
+            android:title="@string/title_activity_all_you_should_know"><intent-filter>
+                <action android:name="showTimePlease"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".RenderViewTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>
+        <activity 
+            android:name=".ShapeTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>     
+        <activity 
+            android:name=".BitmapTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>    
+        <activity 
+            android:name=".FontTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>  
+        <activity 
+            android:name=".SurfaceViewTest"
+            android:title="@string/title_activity_all_you_should_know">
+        </activity>  
+    </application>
+
+</manifest>
