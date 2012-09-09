@@ -5,5 +5,45 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_all_you_should_know">All You Should Know</string>
     <string name="where">Where is am I?</string>
-	
+
+    <string-array name="app_name">
+        <item>LifeCycleTest</item>
+        <item>SingleTouchTest</item>
+        <item>MultiTouchTest</item>
+        <item>LayoutsTest</item>
+        <item>KeyTest</item>
+        <item>AccelerometerTest</item>
+        <item>AssetsTest</item>
+        <item>ExternalStorageTest</item>
+        <item>MediaPlayerTest</item>
+        <item>SoundPoolTest</item>
+        <item>LocationTest</item>
+        <item>GoogleMapTest</item>
+        <item>RenderViewTest</item>
+        <item>ShapeTest</item>
+        <item>BitmapTest</item>
+        <item>SurfaceViewTest</item>
+        <item>FontTest</item>
+    </string-array>
+    <string-array name="app_dcpt">
+        <item>Order of method invocation</item>
+        <item>Let\'s get coordinates of single touch</item>
+        <item>Same as previous single but multy</item>
+        <item>Design</item>
+        <item>Returns code number of the clicked key</item>
+        <item>Helps your brain to understand accelerometr work</item>
+        <item>Loading data from special "Assets folder"</item>
+        <item>Saving and loading data to sdcard</item>
+        <item>A beutiful music</item>
+        <item>Click-Sound</item>
+        <item>Return the location\' address</item>
+        <item>Shows your location</item>
+        <item>Paints in View</item>
+        <item>Set of dreawable figures</item>
+        <item>Image load and draw to view</item>
+        <item>Image load and draw to view</item>
+        <item>Sprite drawing</item>
+        <item>Using of text style</item>
+    </string-array>
+
 </resources>

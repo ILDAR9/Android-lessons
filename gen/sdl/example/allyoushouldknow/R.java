@@ -9,6 +9,8 @@ package sdl.example.allyoushouldknow;
 
 public final class R {
     public static final class array {
+        public static final int app_dcpt=0x7f040002;
+        public static final int app_name=0x7f040001;
         public static final int listView=0x7f040000;
     }
     public static final class attr {
@@ -25,29 +27,34 @@ public final class R {
         public static final int ic_launcher=0x7f020008;
     }
     public static final class id {
-        public static final int btn_show=0x7f08000c;
+        public static final int avatar=0x7f08000f;
+        public static final int btn_show=0x7f08000d;
         public static final int callButton=0x7f080006;
+        public static final int email=0x7f080011;
         public static final int lButtom=0x7f080008;
         public static final int leText=0x7f080007;
         public static final int lspinner=0x7f08000a;
         public static final int ltView=0x7f080009;
         public static final int mapButton=0x7f080005;
-        public static final int map_view=0x7f08000d;
-        public static final int menu_settings=0x7f08000e;
-        public static final int menu_visual=0x7f08000f;
-        public static final int tView=0x7f08000b;
+        public static final int map_view=0x7f08000e;
+        public static final int menu_settings=0x7f080012;
+        public static final int menu_visual=0x7f080013;
+        public static final int tHead=0x7f08000b;
+        public static final int tUnder=0x7f08000c;
         public static final int text_x=0x7f080001;
         public static final int text_y=0x7f080002;
         public static final int text_z=0x7f080000;
         public static final int timeButton=0x7f080003;
+        public static final int username=0x7f080010;
         public static final int webButton=0x7f080004;
     }
     public static final class layout {
         public static final int accelerometr=0x7f030000;
         public static final int intenttest=0x7f030001;
         public static final int lineartest=0x7f030002;
-        public static final int main=0x7f030003;
+        public static final int main_item=0x7f030003;
         public static final int map=0x7f030004;
+        public static final int test=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f070000;

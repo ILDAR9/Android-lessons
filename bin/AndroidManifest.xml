@@ -79,10 +79,6 @@
             android:title="@string/title_activity_all_you_should_know">
         </activity>
         <activity 
-            android:name=".FullScreenTest"
-            android:title="@string/title_activity_all_you_should_know">
-        </activity>
-        <activity 
             android:name=".LocationTest"
             android:title="@string/title_activity_all_you_should_know">
         </activity>
