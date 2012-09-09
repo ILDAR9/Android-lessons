@@ -16,7 +16,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.WindowManager.LayoutParams;
 
 public class BitmapTest extends Activity
 {
@@ -33,13 +32,13 @@ public class BitmapTest extends Activity
 			try
 			{
 				AssetManager aManager = getAssets();
-				is = aManager.open("first.png");
+				is = aManager.open("images/first.png");
 				firstBmp = BitmapFactory.decodeStream(is);
 				is.close();
 				
 				Log.d("BitmapTest", "firstBmp.png format " + firstBmp.getConfig());
 				
-				is = aManager.open("second.png");
+				is = aManager.open("images/second.png");
 				BitmapFactory.Options options = new BitmapFactory.Options();
 				options.inPreferredConfig = Bitmap.Config.ARGB_4444;
 				secondBmp = BitmapFactory.decodeStream(is, null, options);

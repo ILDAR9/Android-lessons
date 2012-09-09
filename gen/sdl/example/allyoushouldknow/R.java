@@ -8,10 +8,17 @@
 package sdl.example.allyoushouldknow;
 
 public final class R {
+    public static final class anim {
+        public static final int myalpha=0x7f040000;
+        public static final int mycombo=0x7f040001;
+        public static final int myrotate=0x7f040002;
+        public static final int myscale=0x7f040003;
+        public static final int mytrans=0x7f040004;
+    }
     public static final class array {
-        public static final int app_dcpt=0x7f040002;
-        public static final int app_name=0x7f040001;
-        public static final int listView=0x7f040000;
+        public static final int app_dcpt=0x7f050002;
+        public static final int app_name=0x7f050001;
+        public static final int listView=0x7f050000;
     }
     public static final class attr {
     }
@@ -23,51 +30,100 @@ public final class R {
         public static final int btn_red=0x7f020004;
         public static final int btn_yellow=0x7f020005;
         public static final int coordinates=0x7f020006;
-        public static final int ic_action_search=0x7f020007;
-        public static final int ic_launcher=0x7f020008;
+        public static final int db_back=0x7f020007;
+        public static final int ic_action_search=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int media_back=0x7f02000a;
+        public static final int menu_exit=0x7f02000b;
+        public static final int menu_item=0x7f02000c;
+        public static final int menu_new=0x7f02000d;
+        public static final int menu_open=0x7f02000e;
+        public static final int menu_save=0x7f02000f;
     }
     public static final class id {
-        public static final int avatar=0x7f08000f;
-        public static final int btn_show=0x7f08000d;
-        public static final int callButton=0x7f080006;
-        public static final int email=0x7f080011;
-        public static final int lButtom=0x7f080008;
-        public static final int leText=0x7f080007;
-        public static final int lspinner=0x7f08000a;
-        public static final int ltView=0x7f080009;
-        public static final int mapButton=0x7f080005;
-        public static final int map_view=0x7f08000e;
-        public static final int menu_settings=0x7f080012;
-        public static final int menu_visual=0x7f080013;
-        public static final int tHead=0x7f08000b;
-        public static final int tUnder=0x7f08000c;
-        public static final int text_x=0x7f080001;
-        public static final int text_y=0x7f080002;
-        public static final int text_z=0x7f080000;
-        public static final int timeButton=0x7f080003;
-        public static final int username=0x7f080010;
-        public static final int webButton=0x7f080004;
+        public static final int btnAdd=0x7f09001e;
+        public static final int btnClear=0x7f090020;
+        public static final int btnDel=0x7f090017;
+        public static final int btnRead=0x7f09001f;
+        public static final int btnUpd=0x7f090016;
+        public static final int btn_show=0x7f090010;
+        public static final int callButton=0x7f090009;
+        public static final int edit_filename=0x7f090013;
+        public static final int editor=0x7f090005;
+        public static final int etEmail=0x7f09001c;
+        public static final int etID=0x7f090015;
+        public static final int etName=0x7f090019;
+        public static final int frameLayout1=0x7f090003;
+        public static final int lButtom=0x7f09000b;
+        public static final int layout_save=0x7f090012;
+        public static final int leText=0x7f09000a;
+        public static final int linearLayout1=0x7f090018;
+        public static final int linearLayout2=0x7f09001d;
+        public static final int linearLayout3=0x7f09001a;
+        public static final int linearLayout4=0x7f090014;
+        public static final int lspinner=0x7f09000d;
+        public static final int ltView=0x7f09000c;
+        public static final int mapButton=0x7f090008;
+        public static final int map_view=0x7f090011;
+        public static final int menu_settings=0x7f090022;
+        public static final int menu_visual=0x7f090023;
+        public static final int tHead=0x7f09000e;
+        public static final int tUnder=0x7f09000f;
+        public static final int textView2=0x7f09001b;
+        public static final int text_sql=0x7f090021;
+        public static final int text_x=0x7f090001;
+        public static final int text_y=0x7f090002;
+        public static final int text_z=0x7f090000;
+        public static final int timeButton=0x7f090006;
+        public static final int tv=0x7f090004;
+        public static final int webButton=0x7f090007;
     }
     public static final class layout {
         public static final int accelerometr=0x7f030000;
-        public static final int intenttest=0x7f030001;
-        public static final int lineartest=0x7f030002;
-        public static final int main_item=0x7f030003;
-        public static final int map=0x7f030004;
-        public static final int test=0x7f030005;
+        public static final int animtest=0x7f030001;
+        public static final int editor=0x7f030002;
+        public static final int intenttest=0x7f030003;
+        public static final int lineartest=0x7f030004;
+        public static final int main_item=0x7f030005;
+        public static final int map=0x7f030006;
+        public static final int savedialog=0x7f030007;
+        public static final int sqlitetest=0x7f030008;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
-        public static final int menu_settings=0x7f050002;
-        public static final int title_activity_all_you_should_know=0x7f050003;
-        public static final int where=0x7f050004;
+        public static final int add=0x7f06000d;
+        public static final int app_name=0x7f060000;
+        public static final int btn_cancel=0x7f06000f;
+        public static final int btn_ok=0x7f060006;
+        public static final int clear=0x7f06000c;
+        public static final int delete=0x7f060009;
+        public static final int editor_dcpt=0x7f060018;
+        public static final int editor_help=0x7f060019;
+        public static final int email=0x7f06000b;
+        public static final int hello_world=0x7f060001;
+        public static final int id=0x7f060007;
+        public static final int id_not_number=0x7f06001b;
+        public static final int menu_exit=0x7f060017;
+        public static final int menu_new=0x7f060014;
+        public static final int menu_open=0x7f060015;
+        public static final int menu_save=0x7f060016;
+        public static final int menu_settings=0x7f060002;
+        public static final int msg_error=0x7f060011;
+        public static final int msg_exit=0x7f060010;
+        public static final int name=0x7f06000a;
+        public static final int no_id=0x7f06001a;
+        public static final int read=0x7f06000e;
+        public static final int title_activity_all_you_should_know=0x7f060003;
+        public static final int title_activity_enviroment=0x7f060005;
+        public static final int title_open=0x7f060012;
+        public static final int title_save=0x7f060013;
+        public static final int update=0x7f060008;
+        public static final int where=0x7f060004;
     }
     public static final class style {
-        public static final int AppTheme=0x7f060000;
-        public static final int ButtonText=0x7f060001;
+        public static final int AppTheme=0x7f070000;
+        public static final int ButtonText=0x7f070001;
     }
 }

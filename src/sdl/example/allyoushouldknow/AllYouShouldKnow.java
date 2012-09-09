@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -38,6 +39,7 @@ public class AllYouShouldKnow extends ListActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
 		Resources res = getResources();
 		tests = res.getStringArray(R.array.app_name);
 		String[] dcpt = res.getStringArray(R.array.app_dcpt);
@@ -45,7 +47,7 @@ public class AllYouShouldKnow extends ListActivity {
 		for (int i =0;i < tests.length; i++){
 			appsList.add(new AppsStore(tests[i], dcpt[i]));
 		}
-		setListAdapter(new AppsItemAdapter(this, R.layout.test, appsList));
+		setListAdapter(new AppsItemAdapter(this, R.layout.main_item, appsList));
 	}
 
 	public class AppsItemAdapter extends ArrayAdapter<AppsStore> {

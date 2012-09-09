@@ -1,9 +1,7 @@
 package sdl.example.allyoushouldknow;
 
-import android.R.color;
 import android.app.Activity;
 import android.content.Context;
-import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
