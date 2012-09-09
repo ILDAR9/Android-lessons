@@ -6,6 +6,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
@@ -13,73 +14,77 @@ import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 import com.google.android.maps.MyLocationOverlay;
 
-
-public class GoogleMapTest extends MapActivity
-{	
+public class GoogleMapTest extends MapActivity {
+	private MapView mapView;
+	private Location location;
+	MapController mController;
+	private LocationManager lManager;
+	private MyLocationOverlay cMyLocationOverlay;
 	@Override
-	public void onCreate(Bundle savedInstanceState)
-	{
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		setContentView(R.layout.mapview);
-		
-		MapView mapView = (MapView) findViewById(R.id.mapView);
-		
+
+		setContentView(R.layout.map);
+
+		mapView = (MapView) findViewById(R.id.map_view);
+
 		// Get the MapController
-		MapController mController = mapView.getController();
-		
+		mController = mapView.getController();
+
 		mapView.setBuiltInZoomControls(true);
-		
-		LocationManager lManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-		LocationListener lListener = new LocationListener()
-		{
 
-			public void onLocationChanged(Location arg0) {
-				// TODO Auto-generated method stub
-				
-			}
+		lManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+//		LocationListener lListener = new LocationListener() {
+//
+//			public void onLocationChanged(Location arg0) {
+//				// TODO Auto-generated method stub
+//
+//			}
+//
+//			public void onProviderDisabled(String arg0) {
+//				// TODO Auto-generated method stub
+//
+//			}
+//
+//			public void onProviderEnabled(String arg0) {
+//				// TODO Auto-generated method stub
+//
+//			}
+//
+//			public void onStatusChanged(String arg0, int arg1, Bundle arg2) {
+//				// TODO Auto-generated method stub
+//
+//			}
+//		};
+//
+//		lManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0,
+//				lListener);
 
-			public void onProviderDisabled(String arg0) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			public void onProviderEnabled(String arg0) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			public void onStatusChanged(String arg0, int arg1, Bundle arg2) {
-				// TODO Auto-generated method stub
-				
-			}
-		};
-		
-		lManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, lListener);
-		
-		MyLocationOverlay cMyLocationOverlay = new MyLocationOverlay(this, mapView);
+		cMyLocationOverlay = new MyLocationOverlay(this,
+				mapView);
 		cMyLocationOverlay.disableCompass();
 		cMyLocationOverlay.enableMyLocation();
-		mapView.getOverlays().add(cMyLocationOverlay);
-		
+				
+	}
+	
+	public void onClick(View v){
+		location = lManager
+				.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
-		
-		Location location = lManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-		
-			try
-			{
-				mController.animateTo(cMyLocationOverlay.getMyLocation());
-				//mController.animateTo(new GeoPoint((int) location.getLatitude() * 1000000, (int) location.getLongitude() * 1000000));
-				mController.setZoom(15);
-			} catch (Exception e)
-			{
-				Log.d("GoogleMapTest", "Exception has occured!");
-			}
+		try {
+			// mController.animateTo(cMyLocationOverlay.getMyLocation());
+			mController.animateTo(new GeoPoint((int)(location.getLatitude()*1E6), 
+					(int)(location.getLongitude()*1E6)));
+			mController.setZoom(30);
+		} catch (Exception e) {
+			Log.d("GoogleMapTest", "Exception has occured!");
+		}
+		mapView.getOverlays().add(cMyLocationOverlay);
 	}
 
+
 	@Override
-	protected boolean isRouteDisplayed() 
-	{
+	protected boolean isRouteDisplayed() {
 		// TODO Auto-generated method stub
 		return false;
 	}

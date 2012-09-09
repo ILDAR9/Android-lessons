@@ -1,6 +1,5 @@
 package sdl.example.allyoushouldknow;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
@@ -10,7 +9,6 @@ import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
-import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -105,7 +103,6 @@ public class LocationTest extends Activity implements OnTouchListener
 	
 	private void refresh()
 	{
-		textView.setText("");
 		textView.setText(builder.toString());
 	}
 	
