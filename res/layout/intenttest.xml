@@ -1,38 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#334433"
-    >
-    
-    <Button
-        android:layout_margin="30dip"
-        android:id="@+id/timeButton"
-        android:layout_width="fill_parent"
-		android:layout_height="wrap_content" 
-		android:text="Show TIME!!!:))))"       
-        />
-    <Button
-        android:id="@+id/webButton"
-        android:layout_width="fill_parent"
-		android:layout_height="wrap_content" 
-		android:text="Web? What?"       
-		android:layout_margin="30dip"
-        />
-    <Button
-        android:id="@+id/mapButton"
-        android:layout_width="fill_parent"
-		android:layout_height="wrap_content" 
-		android:text="Map - funny:)"    
-		android:layout_margin="30dip"   
-        />
-    <Button
-        android:id="@+id/callButton"
-        android:layout_width="fill_parent"
-		android:layout_height="wrap_content" 
-		android:text="Let me call for somebody:)"  
-		android:layout_margin="30dip"     
-        />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intent_back" >
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/timeButton"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_purple"
+            android:onClick="onClick"
+            android:text="@string/show_time"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/webButton"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_green"
+            android:onClick="onClick"
+            android:text="@string/web_intent"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/mapButton"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_yellow"
+            android:onClick="onClick"
+            android:text="@string/map_cur"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/callButton"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_blue"
+            android:onClick="onClick"
+            android:text="@string/call_smbd"
+            android:textSize="15dp" />
     </LinearLayout>
+
+</RelativeLayout>

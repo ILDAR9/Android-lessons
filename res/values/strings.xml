@@ -1,14 +1,42 @@
 <resources>
 
-    <string name="app_name">AllYouShouldKnow</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Android Base</string>
+    
+    <string name="anim">Animation</string>
+    <string name="accelerometer">Accelerometer</string>
+    <string name="asset_text">Text</string>
+    <string name="asset_image">Images</string>
+    <string name="editor">Text editor</string>
+    <string name="text_font">Text as Image</string>
+    <string name="google_map">Visible locator</string>
+    <string name="location">Current location</string>
+    <string name="asset_music">Music player</string>
+    <string name="multy_touch">Multy - touch</string>
+    <string name="single_touch">Single - touch</string>
+    <string name="surface_view">Sprite drawing</string>
+    <string name="shape">2D drawing</string>
+    <string name="intent_call">Intent using</string>
+    <string name="asset_sound_pool">Touch - sound</string>
+    <string name="sql">Database</string>
+    <string name="web_view">Simple Web browser</string>
+    <string name="render_view">Random drawing</string>
+    
+    <string name="time_getter">Current time: \nCurrent date: </string>
+    
     <string name="menu_settings">Settings</string>
     <string name="title_activity_all_you_should_know">All You Should Know</string>
     <string name="where">Where is am I?</string>
     <string name="title_activity_enviroment">EnviromentActivity</string>
     <string name="btn_ok">OK</string>
     
-    <string name="id">ID   </string>
+    <string name="location_ans">Country:\n\nLocality:\n\nAddress:</string>
+    
+    <string name="show_time">Show TIME</string>
+    <string name="map_cur">What in map(55.75, 37.62)</string>
+    <string name="web_intent">developer.android.com</string>
+    <string name="call_smbd">Let me call for somebody:)</string>
+    
+    <string name="id">ID</string>
     <string name="update">Update</string>
     <string name="delete">Delete</string>
     <string name="name">Name</string>
@@ -16,6 +44,13 @@
     <string name="clear">Clear</string>
     <string name="add">Add</string>
     <string name="read">Read</string>
+    
+    <string name="anim_dcpt">Hold the TextView below, in order to get list of animations.</string>
+    <string name="anim_action">Animation</string>
+    
+    <string name="sp_dcpt">Simple click-sound realisation, Click Android</string>
+    
+    <string name="single_dcpt">action x y</string>
     
     <string name="btn_cancel">Cancel</string>
     <string name="msg_exit">Do you want to exit from application?</string>
@@ -26,7 +61,7 @@
     <string name="menu_open">Open</string>
     <string name="menu_save">Save</string>
     <string name="menu_exit">Exit</string>
-    <string name="editor_dcpt">		It is simpliest text redactor\nwhich can load and save data to sdcard</string>
+    <string name="editor_dcpt">It is simpliest text redactor\nwhich can load and save data to sdcard</string>
     <string name="editor_help">Type here</string>
 	<string name="no_id">ID row is empty</string>
     <string name="id_not_number">Id is invalid, please check that it is a number</string>

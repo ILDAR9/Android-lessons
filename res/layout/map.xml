@@ -22,9 +22,10 @@
     <com.google.android.maps.MapView
         android:id="@+id/map_view"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"        
-        android:apiKey="0HQsI43IfNwo0k3fC-ZTpg-4SDMx2eu6gpfhQMw"
+        android:layout_height="fill_parent"  
         android:clickable="true"
-        android:enabled="true" />
+        android:enabled="true" 
+        android:apiKey="0HQsI43IfNwqKk_Dv8VPW0YFEgax15RNUswYOrw"/>     
+        <!-- android:apiKey= "0HQsI43IfNwo0k3fC-ZTpg-4SDMx2eu6gpfhQMw" -->
 
 </LinearLayout>

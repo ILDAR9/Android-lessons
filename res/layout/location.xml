@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/location"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_show"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_purple"
+        android:onClick="onClick"
+        android:text="@string/where" />
+
+    <TextView
+        android:id="@+id/text_menu"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_show"
+        android:text="@string/location_ans"
+        android:textColor="#FF0620"
+        android:visibility="invisible"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_location"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/text_menu"
+        android:textColor="#FF0620"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_status"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:textColor="#089C21"
+        android:textSize="15dp" />
+
+</RelativeLayout>

@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
        	style="@style/ButtonText"
-       	android:textColor="#FF6600"/>
+       	android:textColor="#FF1100"/>
 
     <TextView
         android:id="@+id/tUnder"

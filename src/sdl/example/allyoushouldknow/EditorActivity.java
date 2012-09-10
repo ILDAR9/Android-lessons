@@ -45,6 +45,7 @@ public class EditorActivity extends Activity {
 		if (!folder.exists()) {
 			folder.mkdir();
 		}
+		Toast.makeText(this, R.string.editor_dcpt, Toast.LENGTH_LONG).show();
 	}
 
 	@Override

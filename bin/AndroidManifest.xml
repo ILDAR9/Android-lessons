@@ -25,8 +25,7 @@
         <uses-library android:name="com.google.android.maps" />
 
         <activity
-            android:name=".AllYouShouldKnow"
-            android:label="@string/title_activity_all_you_should_know" >
+            android:name=".AllYouShouldKnow">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,97 +33,80 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LifeCycleTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
             android:name=".SingleTouchTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".MultiTouchTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".LayoutsTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".WebViewTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".KeyTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".AccelerometerTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".AssetsTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".EditorActivity"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".SoundPoolTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".MediaPlayerTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".LocationTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".GoogleMapTest"
-            android:title="@string/title_activity_all_you_should_know" >
-        </activity>
-        <activity
-            android:name=".IntentTest"
-            android:title="@string/title_activity_all_you_should_know" >
+            android:label="@string/single_touch" >
         </activity>
         <activity
             android:name=".ShowTime"
-            android:title="@string/title_activity_all_you_should_know" >
-           <!--   <intent-filter>
-                <action android:name="showTimePlease" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>-->
+            android:label="@string/intent_call" >
+        </activity>
+        <activity
+            android:name=".MultiTouchTest"
+            android:label="@string/multy_touch" >
+        </activity>
+        <activity
+            android:name=".WebViewTest"
+            android:label="@string/web_view" >
+        </activity>
+        <activity
+            android:name=".AccelerometerTest"
+            android:label="@string/accelerometer" >
+        </activity>
+        <activity
+            android:name=".AssetsTest"
+            android:label="@string/asset_text" >
+        </activity>
+        <activity
+            android:name=".EditorActivity"
+            android:label="@string/editor" >
+        </activity>
+        <activity
+            android:name=".SoundPoolTest"
+            android:label="@string/asset_sound_pool" >
+        </activity>
+        <activity
+            android:name=".MediaPlayerTest"
+            android:label="@string/asset_music" >
+        </activity>
+        <activity
+            android:name=".LocationTest"
+            android:label="@string/location" >
+        </activity>
+        <activity
+            android:name=".GoogleMapTest"
+            android:label="@string/google_map" >
+        </activity>
+        <activity
+            android:name=".IntentTest"
+            android:label="@string/intent_call" >
         </activity>
         <activity
             android:name=".RenderViewTest"
-            android:title="@string/title_activity_all_you_should_know" >
+            android:label="@string/render_view" >
         </activity>
         <activity
             android:name=".ShapeTest"
-            android:title="@string/title_activity_all_you_should_know" >
+            android:label="@string/shape" >
         </activity>
         <activity
             android:name=".BitmapTest"
-            android:title="@string/title_activity_all_you_should_know" >
+            android:label="@string/asset_image" >
         </activity>
         <activity
             android:name=".FontTest"
-            android:title="@string/title_activity_all_you_should_know" >
+            android:label="@string/text_font" >
         </activity>
         <activity
             android:name=".SurfaceViewTest"
-            android:title="@string/title_activity_all_you_should_know" >
+            android:label="@string/surface_view" >
         </activity>
         <activity
             android:name=".SQLiteTest"
-            android:title="@string/title_activity_all_you_should_know" >
+            android:label="@string/sql" >
         </activity>
         <activity
             android:name=".AnimationTest"
-            android:title="@string/title_activity_all_you_should_know" >
+            android:label="@string/anim" >
         </activity>
         
     </application>

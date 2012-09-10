@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.widget.Toast;
 
 public class SurfaceViewTest extends Activity {
 
@@ -24,14 +25,13 @@ public class SurfaceViewTest extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		Toast.makeText(this, "Sprite drawing", Toast.LENGTH_LONG).show();
 		try {
 			fastRenderView = new FastRenderView(this);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 		setContentView(fastRenderView);
 	}
 
@@ -95,8 +95,9 @@ public class SurfaceViewTest extends Activity {
 		public void run() {
 			// TODO Auto-generated method stub
 			sprite = new Sprite(fastRenderView, spriteImg);
-			startTime = System.currentTimeMillis();
+			
 			while (running) {
+				startTime = System.currentTimeMillis();
 				if (!holder.getSurface().isValid())
 					continue;
 
@@ -104,19 +105,19 @@ public class SurfaceViewTest extends Activity {
 				canvas.drawColor(Color.BLACK);
 				sprite.drawYourSelf(canvas);
 				holder.unlockCanvasAndPost(canvas);
-
-			}
-
-			sleepTime = 100 - (System.currentTimeMillis() - startTime);
-			try {
-				if (sleepTime > 0) {
-					Thread.sleep(sleepTime);
-				} else {
-					Thread.sleep(10);
+				sleepTime = 100 - (System.currentTimeMillis() - startTime);
+				try {
+					if (sleepTime > 0) {
+						Thread.sleep(sleepTime);
+					} else {
+						Thread.sleep(10);
+					}
+				} catch (Exception e) {
+					Log.e("error", "exception");
 				}
-			} catch (Exception e) {
-				Log.e("error", "exception");
 			}
+
+			
 		}
 
 	}
@@ -126,7 +127,7 @@ public class SurfaceViewTest extends Activity {
 		final int ROWS = 4;
 		Bitmap spriteImg;
 		FastRenderView fastRenderView;
-		int x, y, speedX = 1, speedY = 0;
+		int x, y, speedX = 3, speedY = 0;
 		int width, height;
 		Rect src, dst;
 		int currentFrame = 0;
@@ -155,8 +156,8 @@ public class SurfaceViewTest extends Activity {
 			currentFrame = ++currentFrame % 3;
 			src = new Rect(this.width * currentFrame, this.height * 2,
 					this.width * (currentFrame + 1), this.height * 3);
-			dst = new Rect(this.x, this.y, this.x + this.width, this.y
-					+ this.height);
+			dst = new Rect(this.x, this.y, this.x + this.width * 3, this.y
+					+ this.height * 3);
 		}
 
 		public void drawYourSelf(Canvas canvas) {

@@ -33,7 +33,6 @@ public class AnimationTest extends Activity {
 			menu.add(0, MENU_ALPHA_ID, 0, "Alpha");
 			menu.add(0, MENU_SCALE_ID, 0, "Scale");
 			menu.add(0, MENU_ROTATE_ID, 0, "Rotate");
-			menu.add(0, MENU_COMBO_ID, 0, "Combo");
 			menu.add(0, MENU_TRANSLATE_ID, 0, "Translate");
 		}
 		super.onCreateContextMenu(menu, v, menuInfo);
@@ -58,10 +57,6 @@ public class AnimationTest extends Activity {
 		}
 		case MENU_ROTATE_ID: {
 			anim = AnimationUtils.loadAnimation(this, R.anim.myrotate);
-			break;
-		}
-		case MENU_COMBO_ID: {
-			anim = AnimationUtils.loadAnimation(this, R.anim.mycombo);
 			break;
 		}
 		}

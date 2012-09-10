@@ -34,7 +34,6 @@
         android:id="@+id/ltView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world"
         android:textSize="20dip" 
         android:layout_margin="20dip"/>
     

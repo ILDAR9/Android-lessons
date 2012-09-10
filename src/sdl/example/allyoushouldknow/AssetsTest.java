@@ -7,7 +7,9 @@ import java.io.InputStream;
 import android.app.Activity;
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AssetsTest extends Activity
 {
@@ -17,7 +19,7 @@ public class AssetsTest extends Activity
 		super.onCreate(savedInstanceState);
 		
 		TextView textView = new TextView(this);
-		
+		textView.setMovementMethod(new ScrollingMovementMethod());
 		setContentView(textView);
 		
 		AssetManager aManager = getAssets();
@@ -43,7 +45,7 @@ public class AssetsTest extends Activity
 				textView.setText("Coludn't close file");
 			}
 		}
-		
+		Toast.makeText(this, "Big text was loaded from folder - assets", Toast.LENGTH_LONG).show();
 	}
 	
 	

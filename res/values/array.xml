@@ -7,14 +7,11 @@
         <item>Option 4</item>
     </string-array>
     <string-array name="app_name">
-        <item>LifeCycleTest</item>
         <item>SingleTouchTest</item>
         <item>MultiTouchTest</item>
-        <item>LayoutsTest</item>
-        <item>KeyTest</item>
-        <item >WebViewTest</item>
+        <item>IntentTest</item>
+        <item>WebViewTest</item>
         <item>AccelerometerTest</item>
-        <item >ShowTime</item>
         <item>AssetsTest</item>
         <item>EditorActivity</item>
         <item>MediaPlayerTest</item>
@@ -23,34 +20,31 @@
         <item>GoogleMapTest</item>
         <item>RenderViewTest</item>
         <item>ShapeTest</item>
-        <item>AnimationTest</item>        
+        <item>AnimationTest</item>
         <item>BitmapTest</item>
         <item>SurfaceViewTest</item>
         <item>FontTest</item>
-        <item >SQLiteTest</item>
+        <item>SQLiteTest</item>
     </string-array>
     <string-array name="app_dcpt">
-        <item>Order of method invocation</item>
-        <item>Let\'s get coordinates of single touch</item>
-        <item>Same as previous single but multy</item>
-        <item>Design</item>
-        <item>Returns code number of the clicked key</item>
-        <item >Simple Web browser</item>
-        <item>Helps your brain to understand accelerometr work</item>
-        <item >Simple time dialog</item>
-        <item>Loading data from special "Assets folder"</item>
-        <item>Saving and loading data to sdcard</item>
-        <item>A beutiful music</item>
-        <item>Click-Sound</item>
-        <item>Return the location\' address</item>
-        <item>Shows your location</item>
-        <item>Paints in View</item>
-        <item>Set of drawable figures</item>
-        <item>Animation examples</item>
-        <item>Image load and draw to view</item>
-        <item>Sprite drawing</item>
-        <item>Using of text style</item>
-        <item >Using built-in database</item>
+        <item>1) Let\'s get coordinates of single touch</item>
+        <item>2) Same as previous single but multy</item>
+        <item>3) Switchs another application</item>
+        <item>4) Simple Web browser</item>
+        <item>5) Helps your brain to understand accelerometr work</item>
+        <item>6) Loading data from special "Assets folder"</item>
+        <item>7) Saving and loading data to sdcard</item>
+        <item>8) A beutiful music</item>
+        <item>9) Click-Sound</item>
+        <item>10) Return the location\' address</item>
+        <item>11) Shows your location</item>
+        <item>12) Paints in View</item>
+        <item>13) Set of drawable figures</item>
+        <item>14) Animation examples</item>
+        <item>15) Image load and draw to view</item>
+        <item>16) Sprite drawing</item>
+        <item>17) Using of text style</item>
+        <item>18) Using built-in database</item>
     </string-array>
 
 </resources>

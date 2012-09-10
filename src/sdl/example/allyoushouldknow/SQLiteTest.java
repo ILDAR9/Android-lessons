@@ -56,14 +56,14 @@ public class SQLiteTest extends Activity implements OnClickListener {
 		dbHelper = new DBHelper(this);
 	}
 
-	private boolean isNumber(String id){
+	private boolean isNumber(String id) {
 		if (id.equalsIgnoreCase("")) {
-			Toast.makeText(getBaseContext(), R.string.no_id,
-					Toast.LENGTH_SHORT).show();
+			Toast.makeText(getBaseContext(), R.string.no_id, Toast.LENGTH_SHORT)
+					.show();
 			return false;
 		}
-		for (char x : id.toCharArray()){
-			if (!(x > '0' && x < '9')){
+		for (char x : id.toCharArray()) {
+			if (!(x > '0' && x < '9')) {
 				Toast.makeText(getBaseContext(), R.string.id_not_number,
 						Toast.LENGTH_SHORT).show();
 				return false;
@@ -71,18 +71,15 @@ public class SQLiteTest extends Activity implements OnClickListener {
 		}
 		return true;
 	}
-	
+
 	public void onClick(View v) {
 
-	
 		ContentValues cv = new ContentValues();
 
-	
 		String name = etName.getText().toString();
 		String email = etEmail.getText().toString();
 		String id = etID.getText().toString();
 
-		
 		SQLiteDatabase db = dbHelper.getWritableDatabase();
 
 		switch (v.getId()) {
@@ -91,6 +88,8 @@ public class SQLiteTest extends Activity implements OnClickListener {
 			cv.put("email", email);
 			long rowID = db.insert("mytable", null, cv);
 			textView.setText("row inserted, ID = " + rowID);
+			etName.setText("");
+			etEmail.setText("");
 			break;
 		}
 		case R.id.btnRead: {
@@ -107,13 +106,13 @@ public class SQLiteTest extends Activity implements OnClickListener {
 					sb.append("ID = " + cursor.getInt(idColIndex)
 							+ ",\nname = " + cursor.getString(nameColIndex)
 							+ ",\nemail = " + cursor.getString(emailColIndex)
-							+ "\n------------------------------------------\n");
-				
+							+ "\n---------------------------------\n");
+
 				} while (cursor.moveToNext());
 				textView.setText(sb.toString());
 			} else {
 				textView.setText("0 rows");
-			}
+			}			
 			break;
 		}
 		case R.id.btnClear: {
@@ -122,7 +121,7 @@ public class SQLiteTest extends Activity implements OnClickListener {
 			break;
 		}
 		case R.id.btnUpd:
-			if (!isNumber(id)){
+			if (!isNumber(id)) {
 				break;
 			}
 
@@ -132,7 +131,7 @@ public class SQLiteTest extends Activity implements OnClickListener {
 			textView.setText("updated rows count = " + updCount);
 			break;
 		case R.id.btnDel: {
-			if (!isNumber(id)){
+			if (!isNumber(id)) {
 				break;
 			}
 			if (id.equalsIgnoreCase("")) {
@@ -146,7 +145,7 @@ public class SQLiteTest extends Activity implements OnClickListener {
 		}
 		}
 		dbHelper.close();
-		
+
 	}
 
 	class DBHelper extends SQLiteOpenHelper {
@@ -157,7 +156,7 @@ public class SQLiteTest extends Activity implements OnClickListener {
 
 		@Override
 		public void onCreate(SQLiteDatabase db) {
-	
+
 			db.execSQL("create table mytable ("
 					+ "id integer primary key autoincrement,"
 					+ "name text not null," + "email text not null" + ");");

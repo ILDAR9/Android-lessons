@@ -1,11 +1,13 @@
 package sdl.example.allyoushouldknow;
 
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SingleTouchTest extends Activity implements OnTouchListener
@@ -17,12 +19,11 @@ public class SingleTouchTest extends Activity implements OnTouchListener
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		
-		textView = new TextView(this);
-		textView.setText("Touch and drag (one finger only)!");
-		textView.setOnTouchListener(this);
-		
-		setContentView(textView);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		setContentView(R.layout.single_touch);
+		textView = (TextView)findViewById(R.id.text_coordinates);
+		textView.setText("Touch and drag (one finger only)!");		
+		((ImageView)findViewById(R.id.board)).setOnTouchListener(this);			
 	}
 	
 	public boolean onTouch(View v, MotionEvent event) 
@@ -37,7 +38,7 @@ public class SingleTouchTest extends Activity implements OnTouchListener
 			builder.append("move, ");
 			break;
 		case MotionEvent.ACTION_UP:
-			builder.append("up, ");
+			builder.append("  up, ");
 			break;
 		case MotionEvent.ACTION_CANCEL:
 			builder.append("cancel, ");
